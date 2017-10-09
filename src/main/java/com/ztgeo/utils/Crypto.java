@@ -18,7 +18,7 @@ import org.apache.commons.codec.binary.Hex;
 public class Crypto {
 	public static String crypto(String reqStr){
 		try {
-			DESKeySpec desKeySpec = new DESKeySpec("18361552497".getBytes());
+			DESKeySpec desKeySpec = new DESKeySpec("13813299154".getBytes());
 			SecretKeyFactory factory = SecretKeyFactory.getInstance("DES");
 			Key convertSecretKey = factory.generateSecret(desKeySpec);
 			//加密 (需要填充加解密的算法/工作方式/填充方式) 

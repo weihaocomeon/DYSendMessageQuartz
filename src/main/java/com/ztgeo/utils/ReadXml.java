@@ -21,6 +21,7 @@ public class ReadXml {
 		Document doc = null;
 		//读取获得对象
 		File file =new File(path+"\\setProperty.xml");
+		System.out.println("文件地址:"+path+"\\setProperty.xml");
 		try {
 		doc = reader.read(file);
 		Element root = doc.getRootElement();
@@ -43,21 +44,12 @@ public class ReadXml {
 			case "url":
 				StaticParams.url = e.getText();
 				break;
-			case "ecName":
-				StaticParams.ecName = e.getText();
+			case "mysqlUrl":
+				StaticParams.mysqlUrl = e.getText();
 				break;
-			case "apId":
-				StaticParams.apID = e.getText();
-				break;
-			case "secretKey":
-				StaticParams.secretKey = e.getText();
-				break;
-			case "sign":
-				StaticParams.sign = e.getText();
-				break;
-			case "webSUrl":
-				StaticParams.webSUrl = e.getText();
-				break;
+			case "APPLICATIONID":
+				StaticParams.APPLICATIONID = e.getText();
+				break;	
 			case "receiveMailAccount":
 				StaticParams.receiveMailAccount = e.getText();
 				break;
@@ -88,11 +80,10 @@ public class ReadXml {
 		}
 		System.out.println(("xml获取得到的参数:"
 				+"\n"+StaticParams.url
-				+"\n"+StaticParams.ecName
-				+"\n"+StaticParams.apID
-				+"\n"+StaticParams.secretKey
-				+"\n"+StaticParams.sign
-				+"\n"+StaticParams.webSUrl
+				+"\n"+StaticParams.username
+				+"\n"+StaticParams.password
+				+"\n"+StaticParams.mysqlUrl
+				+"\n"+StaticParams.APPLICATIONID
 				+"\n"+StaticParams.receiveMailAccount
 				+"\n"+StaticParams.sendMailPeople
 				+"\n"+StaticParams.receiveMailPeople
@@ -102,11 +93,10 @@ public class ReadXml {
 		
 		log.info(("xml获取得到的参数:"
 				+"\n"+StaticParams.url
-				+"\n"+StaticParams.ecName
-				+"\n"+StaticParams.apID
-				+"\n"+StaticParams.secretKey
-				+"\n"+StaticParams.sign
-				+"\n"+StaticParams.webSUrl
+				+"\n"+StaticParams.username
+				+"\n"+StaticParams.password
+				+"\n"+StaticParams.mysqlUrl
+				+"\n"+StaticParams.APPLICATIONID
 				+"\n"+StaticParams.receiveMailAccount
 				+"\n"+StaticParams.sendMailPeople
 				+"\n"+StaticParams.receiveMailPeople

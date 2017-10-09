@@ -5,20 +5,17 @@ public class StaticParams {
 	public static String username;
 	public static String password;
 	public static String url; 
+	
+	//APPLICATIONID
+	public static String APPLICATIONID;
+	//连接mysql  
+	public static String mysqlUrl;
 	//log path
 	public static String logpath ;
 	//xml read path
 	public static String xmlPath;
 	//xml read Quartz time
 	public static String QuartzTime; 
-	//集团客户名称
-	public static String ecName;
-	//用户名
-	public static String apID;
-	//密码
-	public static String secretKey;
-	//网关签名编码
-	public static String sign;
 	//webService地址
 	public static String webSUrl;
 	//收件人邮箱

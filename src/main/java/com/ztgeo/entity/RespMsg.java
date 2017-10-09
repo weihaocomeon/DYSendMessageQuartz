@@ -1,59 +1,62 @@
 package com.ztgeo.entity;
 
 public class RespMsg {
-	private boolean isOk ;//返回状态值是否正常
-	private String rspcod;//返回的具体情况
-	private String msgGroup;//返回的消息批次号
-	private String id;//原消息的定位
+	private String sismsid;//主键(orcle的mysqlid)
+	private String senttime;//发送时间
+	private String sentresult;//发送结果
 	public RespMsg() {
 	}
-	
-	
-	
-	public RespMsg(boolean isOk, String rspcod, String msgGroup, String id) {
+	public RespMsg(String sismsid, String senttime, String sentresult) {
 		super();
-		this.isOk = isOk;
-		this.rspcod = rspcod;
-		this.msgGroup = msgGroup;
-		this.id = id;
+		this.sismsid = sismsid;
+		this.senttime = senttime;
+		this.sentresult = sentresult;
 	}
-
-
-
-	public String getMsgGroup() {
-		return msgGroup;
+	/**
+	 * @return sismsid
+	 */
+	public String getSismsid() {
+		return sismsid;
 	}
-
-
-
-	public void setMsgGroup(String msgGroup) {
-		this.msgGroup = msgGroup;
+	/**
+	 * @param sismsid 要设置的 sismsid
+	 */
+	public void setSismsid(String sismsid) {
+		this.sismsid = sismsid;
 	}
-
-
-
-	public String getId() {
-		return id;
+	/**
+	 * @return senttime
+	 */
+	public String getSenttime() {
+		return senttime;
 	}
-
-
-
-	public void setId(String id) {
-		this.id = id;
+	/**
+	 * @param senttime 要设置的 senttime
+	 */
+	public void setSenttime(String senttime) {
+		this.senttime = senttime;
 	}
-
-
-
-	public boolean isOk() {
-		return isOk;
+	/**
+	 * @return sentresult
+	 */
+	public String getSentresult() {
+		return sentresult;
 	}
-	public void setOk(boolean isOk) {
-		this.isOk = isOk;
+	/**
+	 * @param sentresult 要设置的 sentresult
+	 */
+	public void setSentresult(String sentresult) {
+		this.sentresult = sentresult;
 	}
-	public String getRspcod() {
-		return rspcod;
+	/* （非 Javadoc）
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "RespMsg [sismsid=" + sismsid + ", senttime=" + senttime + ", sentresult=" + sentresult + "]";
 	}
-	public void setRspcod(String rspcod) {
-		this.rspcod = rspcod;
-	}
+	
+	
+	
+	
 }

@@ -1,24 +1,405 @@
-17:08:02 15:38:53  INFO : ※程序启动中-----启动日期:※2017-08-02 15:38:936※
-17:08:02 15:38:53  INFO : xml获取得到的参数:
-dybdcyjk
-dybdcyjk
+17:10:08 12:30:39 ERROR : ----数据库连接异常
+java.sql.SQLException: The url cannot be null
+	at java.sql.DriverManager.getConnection(DriverManager.java:649)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.ztgeo.dao.Dao.getConnO(Dao.java:26)
+	at com.ztgeo.sendMessage.SendMessage.synData(SendMessage.java:43)
+	at com.ztgeo.sendMessage.SendMessage.test(SendMessage.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+17:10:08 12:32:09  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 12:32:10  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 12:32:10  INFO : xml获取得到的参数:
 jdbc:oracle:thin:@localhost:1521:orcl
-东营市国土资源局
-ceshi0
-ceshi0
-uJHXjyjdt
-http://112.35.1.155:1992/sms/norsubmit?
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
 weihao@ztgeo.com.cn
 系统管理员
 被通知人
 东营短息通知程序反馈邮件
 0 */1 * * * ?
-17:08:02 15:38:53  INFO : Using default implementation for ThreadExecutor
-17:08:02 15:38:53  INFO : Job execution threads will use class loader of thread: Thread-0
-17:08:02 15:38:53  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-17:08:02 15:38:53  INFO : Quartz Scheduler v.2.3.0 created.
-17:08:02 15:38:53  INFO : RAMJobStore initialized.
-17:08:02 15:38:53  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+17:10:08 12:32:10  INFO : 数据库:oracle.jdbc.driver.T4CConnection@74294adb
+17:10:08 12:32:11  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@6af93788
+17:10:08 12:32:11 ERROR : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from sms_sent where sismsid in('ceshi000001','ceshi000002')' at line 1
+17:10:08 12:32:11 ERROR : 获取mysql数据出现问题
+java.sql.SQLException: 关闭的 Resultset: next
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.OracleResultSetImpl.next(OracleResultSetImpl.java:175)
+	at com.ztgeo.sendMessage.SendMessage.getResult(SendMessage.java:75)
+	at com.ztgeo.sendMessage.SendMessage.synData(SendMessage.java:51)
+	at com.ztgeo.sendMessage.SendMessage.test(SendMessage.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+17:10:08 12:34:49  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 12:34:50  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 12:34:50  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 12:34:50  INFO : 数据库:oracle.jdbc.driver.T4CConnection@74294adb
+17:10:08 12:34:51  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@6af93788
+17:10:08 12:34:51 ERROR : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from sms_sent where sismsid in('ceshi000001','ceshi000002')' at line 1
+17:10:08 12:34:51 ERROR : 获取mysql数据出现问题
+java.sql.SQLException: 关闭的 Resultset: next
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.OracleResultSetImpl.next(OracleResultSetImpl.java:175)
+	at com.ztgeo.sendMessage.SendMessage.getResult(SendMessage.java:76)
+	at com.ztgeo.sendMessage.SendMessage.synData(SendMessage.java:51)
+	at com.ztgeo.sendMessage.SendMessage.test(SendMessage.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+17:10:08 12:36:02  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 12:36:03  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 12:36:03  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 12:36:03  INFO : 数据库:oracle.jdbc.driver.T4CConnection@74294adb
+17:10:08 12:36:04  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@6af93788
+17:10:08 12:36:04 ERROR : Table 'dbplugin.sms_sent' doesn't exist
+17:10:08 12:36:04 ERROR : 获取mysql数据出现问题
+java.sql.SQLException: 关闭的 Resultset: next
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.OracleResultSetImpl.next(OracleResultSetImpl.java:175)
+	at com.ztgeo.sendMessage.SendMessage.getResult(SendMessage.java:76)
+	at com.ztgeo.sendMessage.SendMessage.synData(SendMessage.java:51)
+	at com.ztgeo.sendMessage.SendMessage.test(SendMessage.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+17:10:08 12:37:14  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 12:37:14  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 12:37:14  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 12:37:14  INFO : 数据库:oracle.jdbc.driver.T4CConnection@74294adb
+17:10:08 12:37:15  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@6af93788
+17:10:08 12:37:15 ERROR : Unknown column 'sismsid' in 'field list'
+17:10:08 12:37:15 ERROR : 获取mysql数据出现问题
+java.sql.SQLException: 关闭的 Resultset: next
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.OracleResultSetImpl.next(OracleResultSetImpl.java:175)
+	at com.ztgeo.sendMessage.SendMessage.getResult(SendMessage.java:76)
+	at com.ztgeo.sendMessage.SendMessage.synData(SendMessage.java:51)
+	at com.ztgeo.sendMessage.SendMessage.test(SendMessage.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+17:10:08 12:43:05  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 12:43:06  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 12:43:06  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 12:43:06  INFO : 数据库:oracle.jdbc.driver.T4CConnection@74294adb
+17:10:08 12:43:07  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@6af93788
+17:10:08 12:43:07 ERROR : 获取mysql数据出现问题
+java.sql.SQLException: Column 'sismid' not found.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1093)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5488)
+	at com.ztgeo.sendMessage.SendMessage.getResult(SendMessage.java:77)
+	at com.ztgeo.sendMessage.SendMessage.synData(SendMessage.java:51)
+	at com.ztgeo.sendMessage.SendMessage.test(SendMessage.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+17:10:08 12:43:46  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 12:43:47  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 12:43:47  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 12:43:47  INFO : 数据库:oracle.jdbc.driver.T4CConnection@74294adb
+17:10:08 12:43:48  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@6af93788
+17:10:08 12:43:48 ERROR : 获取mysql数据出现问题
+java.sql.SQLException: Column 'sismid' not found.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1093)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5488)
+	at com.ztgeo.sendMessage.SendMessage.getResult(SendMessage.java:78)
+	at com.ztgeo.sendMessage.SendMessage.synData(SendMessage.java:51)
+	at com.ztgeo.sendMessage.SendMessage.test(SendMessage.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+17:10:08 12:44:06  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 12:44:06  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 12:44:06  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 12:44:07  INFO : 数据库:oracle.jdbc.driver.T4CConnection@74294adb
+17:10:08 12:44:08  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@6af93788
+17:10:08 13:34:10  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 13:34:11  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 13:34:11  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 13:34:11  INFO : 数据库:oracle.jdbc.driver.T4CConnection@74294adb
+17:10:08 13:34:12  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@6af93788
+17:10:08 13:34:12  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6fe7aac8
+17:10:08 13:34:12  INFO : mysqlID为:ceshi000001的短信信息请求状态已更新
+17:10:08 13:34:12  INFO : 数据库:oracle.jdbc.driver.T4CConnection@769f71a9
+17:10:08 13:34:12  INFO : mysqlID为:ceshi000002的短信信息请求状态已更新
+17:10:08 13:35:54  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 13:35:54  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 13:35:54  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 13:35:55  INFO : 数据库:oracle.jdbc.driver.T4CConnection@2657d4dd
+17:10:08 13:35:56  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@345f69f3
+17:10:08 13:37:56  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 13:37:57  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 13:37:57  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 13:37:57  INFO : 数据库:oracle.jdbc.driver.T4CConnection@74294adb
+17:10:08 13:37:58  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@6af93788
+17:10:08 13:37:58  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6fe7aac8
+17:10:08 13:37:58  INFO : mysqlID为:ceshi000001的短信信息请求状态已更新
+17:10:08 13:37:58  INFO : 数据库:oracle.jdbc.driver.T4CConnection@769f71a9
+17:10:08 13:37:58  INFO : mysqlID为:ceshi000002的短信信息请求状态已更新
+17:10:08 13:41:13  INFO : ※程序启动中-----启动日期:※2017-10-08 13:41:974※
+17:10:08 13:41:13  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 13:41:13  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 13:41:13  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 13:41:13  INFO : Using default implementation for ThreadExecutor
+17:10:08 13:41:13  INFO : Job execution threads will use class loader of thread: Thread-0
+17:10:08 13:41:13  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 13:41:13  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 13:41:13  INFO : RAMJobStore initialized.
+17:10:08 13:41:13  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -26,604 +407,1041 @@ weihao@ztgeo.com.cn
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-17:08:02 15:38:53  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
-17:08:02 15:38:53  INFO : Quartz scheduler version: 2.3.0
-17:08:02 15:38:53  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
-17:08:02 15:38:53 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:39:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:39:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:39:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:39:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@736f31a5
-17:08:02 15:39:01  INFO : 状态值:true返回状态:success
-17:08:02 15:39:01  INFO : 数据库:oracle.jdbc.driver.T4CConnection@758c53fe
-17:08:02 15:39:01  INFO : ID为:DX-170726102513-XG893QX2QJ的短信信息请求状态已更新
-17:08:02 15:39:24 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:39:49 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:40:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:40:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:40:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:40:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@4a4deb66
-17:08:02 15:40:29 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:40:56 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:41:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:41:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:41:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:41:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@11a5a0af
-17:08:02 15:41:25 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:41:53 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:42:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:42:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:42:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:42:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@2a8a97d6
-17:08:02 15:42:26 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:42:50 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:43:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:43:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:43:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:43:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@579237e5
-17:08:02 15:43:00  INFO : 状态值:true返回状态:success
-17:08:02 15:43:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@5d6a5c95
-17:08:02 15:43:00  INFO : ID为:DX-170726102513-XG893QX2QJ的短信信息请求状态已更新
-17:08:02 15:43:25 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:43:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:44:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:44:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:44:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:44:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@2a98b696
-17:08:02 15:44:27 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:44:51 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:45:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:45:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:45:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:45:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@29d40e77
-17:08:02 15:45:28 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:45:58 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:46:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:46:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:46:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:46:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@2a31c0ef
-17:08:02 15:46:26 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:46:51 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:47:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:47:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:47:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:47:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@7cd10186
-17:08:02 15:47:25 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:47:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:48:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:48:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:48:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:48:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@207be927
-17:08:02 15:48:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:48:47 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:49:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:49:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:49:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:49:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@9bf48ee
-17:08:02 15:49:24 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:49:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:50:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:50:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:50:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:50:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@448a0c5f
-17:08:02 15:50:00  INFO : 状态值:true返回状态:success
-17:08:02 15:50:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@5b70664
-17:08:02 15:50:00  INFO : ID为:DX-170726102513-XG893QX2QJ的短信信息请求状态已更新
-17:08:02 15:50:27 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:50:54 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:51:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:51:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:51:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:51:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@5e5f56d0
-17:08:02 15:51:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:51:51 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:52:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:52:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:52:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:52:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@244d6cf7
-17:08:02 15:52:29 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:52:57 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:53:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:53:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:53:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:53:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@1868c95c
-17:08:02 15:53:24 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:53:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:54:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:54:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:54:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:54:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6e335a4a
-17:08:02 15:54:25 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:54:54 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:55:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:55:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:55:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:55:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@2713e53d
-17:08:02 15:55:27 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:55:51 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:56:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:56:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:56:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:56:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@24f62bd9
-17:08:02 15:56:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:56:49 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:57:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:57:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:57:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:57:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@7216e06c
-17:08:02 15:57:29 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:57:55 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:58:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:58:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:58:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:58:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@2ebc0358
-17:08:02 15:58:27 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:58:51 DEBUG : batch acquisition of 1 triggers
-17:08:02 15:59:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 15:59:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:59:00 DEBUG : Calling execute on job group1.job1
-17:08:02 15:59:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6e031aaf
-17:08:02 15:59:27 DEBUG : batch acquisition of 0 triggers
-17:08:02 15:59:55 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:00:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:00:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:00:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:00:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@2004cb6f
-17:08:02 16:00:24 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:00:51 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:01:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:01:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:01:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:01:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@62c3356c
-17:08:02 16:01:25 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:01:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:02:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:02:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:02:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:02:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@2072fca6
-17:08:02 16:02:25 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:02:53 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:03:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:03:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:03:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:03:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@5e83e8ab
-17:08:02 16:03:26 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:03:56 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:04:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:04:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:04:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:04:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@52e7f6c7
-17:08:02 16:04:27 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:04:51 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:05:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:05:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:05:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:05:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@232c6507
-17:08:02 16:05:24 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:05:47 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:06:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:06:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:06:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:06:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@20c9ab9f
-17:08:02 16:06:24 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:06:53 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:07:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:07:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:07:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:07:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@76296af6
-17:08:02 16:07:29 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:07:56 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:08:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:08:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:08:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:08:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@2a838257
-17:08:02 16:08:26 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:08:51 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:09:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:09:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:09:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:09:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@281b083d
-17:08:02 16:09:25 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:09:49 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:10:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:10:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:10:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:10:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@34f8c3c4
-17:08:02 16:10:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:10:48 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:11:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:11:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:11:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:11:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6fcba8db
-17:08:02 16:11:24 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:11:54 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:12:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:12:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:12:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:12:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@657066cc
-17:08:02 16:12:26 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:12:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:13:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:13:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:13:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:13:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@29ba56e7
-17:08:02 16:13:25 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:13:48 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:14:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:14:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:14:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:14:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@3f89bbfd
-17:08:02 16:14:25 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:14:55 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:15:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:15:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:15:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:15:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@662eef06
-17:08:02 16:15:28 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:15:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:16:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:16:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:16:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:16:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@65cb21e2
-17:08:02 16:16:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:16:49 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:17:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:17:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:17:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:17:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@332bea57
-17:08:02 16:17:24 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:17:50 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:18:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:18:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:18:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:18:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6f810963
-17:08:02 16:18:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:18:51 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:19:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:19:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:19:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:19:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@a84c7b6
-17:08:02 16:19:27 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:19:57 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:20:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:20:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:20:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:20:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@58a1507d
-17:08:02 16:20:26 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:20:50 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:21:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:21:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:21:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:21:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@1abd95ce
-17:08:02 16:21:24 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:21:54 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:22:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:22:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:22:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:22:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@1b3a6993
-17:08:02 16:22:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:22:46 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:23:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:23:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:23:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:23:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@26bb29b1
-17:08:02 16:23:29 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:23:58 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:24:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:24:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:24:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:24:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@504a969c
-17:08:02 16:24:29 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:24:54 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:25:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:25:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:25:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:25:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6f80f202
-17:08:02 16:25:29 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:25:54 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:26:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:26:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:26:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:26:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@41d9a30c
-17:08:02 16:26:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:26:47 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:27:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:27:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:27:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:27:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@47820085
-17:08:02 16:27:27 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:27:54 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:28:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:28:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:28:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:28:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@10cce765
-17:08:02 16:28:26 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:28:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:29:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:29:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:29:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:29:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@790f1630
-17:08:02 16:29:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:29:51 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:30:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:30:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:30:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:30:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6598f92b
-17:08:02 16:30:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:30:50 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:31:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:31:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:31:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:31:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@3e70a99f
-17:08:02 16:31:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:31:46 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:32:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:32:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:32:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:32:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@54df84d7
-17:08:02 16:32:24 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:32:47 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:33:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:33:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:33:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:33:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@78473613
-17:08:02 16:33:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:33:51 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:34:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:34:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:34:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:34:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@245f67d5
-17:08:02 16:34:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:34:49 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:35:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:35:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:35:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:35:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@5702c8c2
-17:08:02 16:35:27 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:35:51 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:36:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:36:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:36:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:36:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@54e4e00d
-17:08:02 16:36:29 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:36:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:37:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:37:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:37:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:37:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@2529d99
-17:08:02 16:37:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:37:48 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:38:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:38:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:38:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:38:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@5ea480e7
-17:08:02 16:38:29 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:38:53 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:39:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:39:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:39:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:39:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@f2fbddc
-17:08:02 16:39:24 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:39:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:40:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:40:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:40:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:40:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@63410944
-17:08:02 16:40:27 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:40:56 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:41:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:41:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:41:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:41:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@45e39368
-17:08:02 16:41:26 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:41:51 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:42:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:42:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:42:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:42:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@637fd526
-17:08:02 16:42:25 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:42:50 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:43:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:43:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:43:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:43:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@39c04f00
-17:08:02 16:43:24 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:43:53 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:44:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:44:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:44:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:44:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@49e3fc57
-17:08:02 16:44:24 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:44:54 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:45:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:45:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:45:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:45:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@17468b78
-17:08:02 16:45:27 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:45:50 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:46:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:46:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:46:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:46:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@391c3c5d
-17:08:02 16:46:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:46:47 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:47:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:47:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:47:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:47:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@3f1129ff
-17:08:02 16:47:25 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:47:51 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:48:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:48:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:48:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:48:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6803305e
-17:08:02 16:48:28 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:48:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:49:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:49:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:49:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:49:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@7f0506e4
-17:08:02 16:49:28 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:49:54 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:50:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:50:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:50:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:50:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@11d5000b
-17:08:02 16:50:26 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:50:55 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:51:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:51:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:51:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:51:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@775c767f
-17:08:02 16:51:28 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:51:56 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:52:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:52:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:52:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:52:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@55f9983
-17:08:02 16:52:27 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:52:53 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:53:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:53:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:53:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:53:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@42362bb1
-17:08:02 16:53:25 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:53:50 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:54:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:54:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:54:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:54:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@3bc7e0c5
-17:08:02 16:54:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:54:49 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:55:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:55:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:55:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:55:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6011049
-17:08:02 16:55:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:55:51 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:56:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:56:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:56:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:56:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@5e4dead
-17:08:02 16:56:25 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:56:50 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:57:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:57:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:57:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:57:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@53041518
-17:08:02 16:57:26 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:57:55 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:58:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:58:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:58:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:58:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@faef62c
-17:08:02 16:58:24 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:58:53 DEBUG : batch acquisition of 1 triggers
-17:08:02 16:59:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 16:59:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:59:00 DEBUG : Calling execute on job group1.job1
-17:08:02 16:59:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@5310c7c5
-17:08:02 16:59:28 DEBUG : batch acquisition of 0 triggers
-17:08:02 16:59:54 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:00:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:00:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:00:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:00:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@43a598f4
-17:08:02 17:00:26 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:00:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:01:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:01:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:01:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:01:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@1b99ebf
-17:08:02 17:01:28 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:01:56 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:02:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:02:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:02:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:02:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@4d611e4a
-17:08:02 17:02:27 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:02:53 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:03:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:03:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:03:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:03:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@3dbf64e7
-17:08:02 17:03:26 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:03:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:04:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:04:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:04:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:04:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@3fbd7f57
-17:08:02 17:04:28 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:04:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:05:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:05:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:05:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:05:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6e79f269
-17:08:02 17:05:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:05:50 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:06:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:06:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:06:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:06:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@9a9ccde
-17:08:02 17:06:25 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:06:50 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:07:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:07:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:07:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:07:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@4d5a1d5
-17:08:02 17:07:29 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:07:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:08:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:08:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:08:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:08:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@782edf73
-17:08:02 17:08:26 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:08:55 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:09:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:09:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:09:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:09:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@522ff501
-17:08:02 17:09:27 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:09:50 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:10:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:10:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:10:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:10:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@61d6600a
-17:08:02 17:10:28 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:10:55 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:11:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:11:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:11:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:11:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@3a3ef346
-17:08:02 17:11:25 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:11:50 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:12:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:12:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:12:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:12:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6530d20d
-17:08:02 17:12:23 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:12:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:13:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:13:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:13:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:13:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@7c092aed
-17:08:02 17:13:28 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:13:52 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:14:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:14:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:14:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:14:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6003d6ba
-17:08:02 17:14:28 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:14:53 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:15:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:15:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:15:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:15:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@2ffc73bc
-17:08:02 17:15:24 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:15:54 DEBUG : batch acquisition of 1 triggers
-17:08:02 17:16:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
-17:08:02 17:16:00 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:16:00 DEBUG : Calling execute on job group1.job1
-17:08:02 17:16:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@7abea16e
-17:08:02 17:16:26 DEBUG : batch acquisition of 0 triggers
-17:08:02 17:16:51 DEBUG : batch acquisition of 1 triggers
+17:10:08 13:41:13  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 13:41:13  INFO : Quartz scheduler version: 2.3.0
+17:10:08 13:41:13  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 13:41:13 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:41:40 DEBUG : batch acquisition of 1 triggers
+17:10:08 13:42:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 13:42:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:42:00 DEBUG : Calling execute on job group1.job1
+17:10:08 13:42:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@191a9109
+17:10:08 13:42:01  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@6f142748
+17:10:08 13:42:01  INFO : ID为:123123的短信推送成功
+17:10:08 13:42:01  INFO : 数据库:oracle.jdbc.driver.T4CConnection@73d0f10b
+17:10:08 13:42:01 ERROR : Job group1.job1 threw an unhandled Exception: 
+java.lang.ArrayIndexOutOfBoundsException: 2
+	at com.ztgeo.sendMessage.SendMessage.updateMsg(SendMessage.java:241)
+	at com.ztgeo.sendMessage.SendMessage.sendMessage(SendMessage.java:214)
+	at com.ztgeo.sendMessage.SendMessage.sendMsg(SendMessage.java:35)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:53)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+17:10:08 13:42:01 ERROR : Job (group1.job1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ArrayIndexOutOfBoundsException: 2]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at com.ztgeo.sendMessage.SendMessage.updateMsg(SendMessage.java:241)
+	at com.ztgeo.sendMessage.SendMessage.sendMessage(SendMessage.java:214)
+	at com.ztgeo.sendMessage.SendMessage.sendMsg(SendMessage.java:35)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:53)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+17:10:08 13:42:24 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:42:49 DEBUG : batch acquisition of 1 triggers
+17:10:08 13:43:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 13:43:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:43:00 DEBUG : Calling execute on job group1.job1
+17:10:08 13:43:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@357303bf
+17:10:08 13:43:00  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@57ca7b4f
+17:10:08 13:43:00  INFO : ID为:123123的短信推送成功
+17:10:08 13:43:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@2f10b99c
+17:10:08 13:43:00 ERROR : Job group1.job1 threw an unhandled Exception: 
+java.lang.ArrayIndexOutOfBoundsException: 2
+	at com.ztgeo.sendMessage.SendMessage.updateMsg(SendMessage.java:241)
+	at com.ztgeo.sendMessage.SendMessage.sendMessage(SendMessage.java:214)
+	at com.ztgeo.sendMessage.SendMessage.sendMsg(SendMessage.java:35)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:53)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+17:10:08 13:43:00 ERROR : Job (group1.job1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ArrayIndexOutOfBoundsException: 2]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at com.ztgeo.sendMessage.SendMessage.updateMsg(SendMessage.java:241)
+	at com.ztgeo.sendMessage.SendMessage.sendMessage(SendMessage.java:214)
+	at com.ztgeo.sendMessage.SendMessage.sendMsg(SendMessage.java:35)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:53)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+17:10:08 13:43:26 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:43:49 DEBUG : batch acquisition of 1 triggers
+17:10:08 13:44:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 13:44:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:44:00 DEBUG : Calling execute on job group1.job1
+17:10:08 13:44:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@7ad99eb0
+17:10:08 13:44:00  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@33941aa
+17:10:08 13:44:00  INFO : ID为:123123的短信推送成功
+17:10:08 13:44:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@7bac6e4f
+17:10:08 13:44:00 ERROR : Job group1.job1 threw an unhandled Exception: 
+java.lang.ArrayIndexOutOfBoundsException: 2
+	at com.ztgeo.sendMessage.SendMessage.updateMsg(SendMessage.java:241)
+	at com.ztgeo.sendMessage.SendMessage.sendMessage(SendMessage.java:214)
+	at com.ztgeo.sendMessage.SendMessage.sendMsg(SendMessage.java:35)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:53)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+17:10:08 13:44:00 ERROR : Job (group1.job1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ArrayIndexOutOfBoundsException: 2]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at com.ztgeo.sendMessage.SendMessage.updateMsg(SendMessage.java:241)
+	at com.ztgeo.sendMessage.SendMessage.sendMessage(SendMessage.java:214)
+	at com.ztgeo.sendMessage.SendMessage.sendMsg(SendMessage.java:35)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:53)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+17:10:08 13:44:26 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:44:52 DEBUG : batch acquisition of 1 triggers
+17:10:08 13:45:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 13:45:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:45:00 DEBUG : Calling execute on job group1.job1
+17:10:08 13:45:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@4ff8e585
+17:10:08 13:45:00  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@8de1179
+17:10:08 13:45:00  INFO : ID为:123123的短信推送成功
+17:10:08 13:45:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6b7ae7ec
+17:10:08 13:45:00 ERROR : Job group1.job1 threw an unhandled Exception: 
+java.lang.ArrayIndexOutOfBoundsException: 2
+	at com.ztgeo.sendMessage.SendMessage.updateMsg(SendMessage.java:241)
+	at com.ztgeo.sendMessage.SendMessage.sendMessage(SendMessage.java:214)
+	at com.ztgeo.sendMessage.SendMessage.sendMsg(SendMessage.java:35)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:53)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+17:10:08 13:45:00 ERROR : Job (group1.job1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ArrayIndexOutOfBoundsException: 2]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at com.ztgeo.sendMessage.SendMessage.updateMsg(SendMessage.java:241)
+	at com.ztgeo.sendMessage.SendMessage.sendMessage(SendMessage.java:214)
+	at com.ztgeo.sendMessage.SendMessage.sendMsg(SendMessage.java:35)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:53)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+17:10:08 13:45:25 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:45:51 DEBUG : batch acquisition of 1 triggers
+17:10:08 13:46:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 13:46:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:46:00 DEBUG : Calling execute on job group1.job1
+17:10:08 13:46:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@2e9e50df
+17:10:08 13:46:00  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@3da00d1c
+17:10:08 13:46:00  INFO : ID为:123123的短信推送成功
+17:10:08 13:46:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@45e1b16a
+17:10:08 13:46:00 ERROR : Job group1.job1 threw an unhandled Exception: 
+java.lang.ArrayIndexOutOfBoundsException: 2
+	at com.ztgeo.sendMessage.SendMessage.updateMsg(SendMessage.java:241)
+	at com.ztgeo.sendMessage.SendMessage.sendMessage(SendMessage.java:214)
+	at com.ztgeo.sendMessage.SendMessage.sendMsg(SendMessage.java:35)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:53)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+17:10:08 13:46:00 ERROR : Job (group1.job1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.ArrayIndexOutOfBoundsException: 2]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at com.ztgeo.sendMessage.SendMessage.updateMsg(SendMessage.java:241)
+	at com.ztgeo.sendMessage.SendMessage.sendMessage(SendMessage.java:214)
+	at com.ztgeo.sendMessage.SendMessage.sendMsg(SendMessage.java:35)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:53)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+17:10:08 13:51:06  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 13:51:07  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 13:51:07  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 13:51:07  INFO : 数据库:oracle.jdbc.driver.T4CConnection@74294adb
+17:10:08 13:51:08  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@6af93788
+17:10:08 13:51:08  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6fe7aac8
+17:10:08 13:51:08  INFO : mysqlID为:ceshi000003的短信信息请求状态已更新
+17:10:08 13:51:20  INFO : ※程序启动中-----启动日期:※2017-10-08 13:51:26※
+17:10:08 13:51:20  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 13:51:20  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 13:51:20  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 13:51:20  INFO : Using default implementation for ThreadExecutor
+17:10:08 13:51:20  INFO : Job execution threads will use class loader of thread: Thread-0
+17:10:08 13:51:20  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 13:51:20  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 13:51:20  INFO : RAMJobStore initialized.
+17:10:08 13:51:20  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 13:51:20  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 13:51:20  INFO : Quartz scheduler version: 2.3.0
+17:10:08 13:51:20  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 13:51:20 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:51:44 DEBUG : batch acquisition of 1 triggers
+17:10:08 13:52:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 13:52:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:52:00 DEBUG : Calling execute on job group1.job1
+17:10:08 13:52:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@7276ef59
+17:10:08 13:52:01  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@773fdb02
+17:10:08 13:52:01  INFO : ID为:123123的短信推送成功
+17:10:08 13:52:01  INFO : 数据库:oracle.jdbc.driver.T4CConnection@13c30cbf
+17:10:08 13:52:01  INFO : ID为:123123的短信信息请求状态已更新
+17:10:08 13:52:01  INFO : 数据库:oracle.jdbc.driver.T4CConnection@38ec4618
+17:10:08 13:52:01  INFO : ---未发现需要同步的数据!
+17:10:08 13:52:27 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:52:53 DEBUG : batch acquisition of 1 triggers
+17:10:08 13:53:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 13:53:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:53:00 DEBUG : Calling execute on job group1.job1
+17:10:08 13:53:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@350fb993
+17:10:08 13:53:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@3bc85142
+17:10:08 13:53:00  INFO : ---未发现需要同步的数据!
+17:10:08 13:55:35  INFO : ※程序启动中-----启动日期:※2017-10-08 13:55:888※
+17:10:08 13:55:36  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 13:55:36  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 13:55:36  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 13:55:36  INFO : Using default implementation for ThreadExecutor
+17:10:08 13:55:36  INFO : Job execution threads will use class loader of thread: Thread-0
+17:10:08 13:55:36  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 13:55:36  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 13:55:36  INFO : RAMJobStore initialized.
+17:10:08 13:55:36  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 13:55:36  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 13:55:36  INFO : Quartz scheduler version: 2.3.0
+17:10:08 13:55:36  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 13:55:36 DEBUG : batch acquisition of 1 triggers
+17:10:08 13:56:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 13:56:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:56:00 DEBUG : Calling execute on job group1.job1
+17:10:08 13:56:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@4fb47214
+17:10:08 13:56:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@3f854fe0
+17:10:08 13:56:01  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@4868ac07
+17:10:08 13:56:01  INFO : 数据库:oracle.jdbc.driver.T4CConnection@3d6f0c6
+17:10:08 13:56:01  INFO : mysqlID为:ceshi000003的短信信息请求状态已更新
+17:10:08 13:56:26 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:56:53 DEBUG : batch acquisition of 1 triggers
+17:10:08 13:57:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 13:57:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 13:57:00 DEBUG : Calling execute on job group1.job1
+17:10:08 13:57:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@11a53ccc
+17:10:08 13:57:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@1f62c088
+17:10:08 13:57:00  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@6fcb3424
+17:10:08 13:57:23 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:00:13  INFO : ※程序启动中-----启动日期:※2017-10-08 14:00:530※
+17:10:08 14:00:13  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 14:00:14  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 14:00:14  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 14:00:14  INFO : Using default implementation for ThreadExecutor
+17:10:08 14:00:14  INFO : Job execution threads will use class loader of thread: Thread-0
+17:10:08 14:00:14  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 14:00:14  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 14:00:14  INFO : RAMJobStore initialized.
+17:10:08 14:00:14  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 14:00:14  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 14:00:14  INFO : Quartz scheduler version: 2.3.0
+17:10:08 14:00:14  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 14:00:14 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:00:41 DEBUG : batch acquisition of 1 triggers
+17:10:08 14:01:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 14:01:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:01:00 DEBUG : Calling execute on job group1.job1
+17:10:08 14:01:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@37a203c0
+17:10:08 14:01:01  INFO : 数据库:oracle.jdbc.driver.T4CConnection@71f72284
+17:10:08 14:01:24 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:01:51 DEBUG : batch acquisition of 1 triggers
+17:10:08 14:02:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 14:02:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:02:00 DEBUG : Calling execute on job group1.job1
+17:10:08 14:02:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@2e9e50df
+17:10:08 14:02:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@2059ab7c
+17:10:08 14:02:29 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:02:59 DEBUG : batch acquisition of 1 triggers
+17:10:08 14:03:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 14:03:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:03:00 DEBUG : Calling execute on job group1.job1
+17:10:08 14:03:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6ebcafd3
+17:10:08 14:03:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@607b5c74
+17:10:08 14:03:04  INFO : 数据库:oracle.jdbc.driver.T4CConnection@7e88214
+17:10:08 14:04:09  INFO : ※程序启动中-----启动日期:※2017-10-08 14:04:735※
+17:10:08 14:04:09  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 14:04:10  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 14:04:10  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 14:04:10  INFO : Using default implementation for ThreadExecutor
+17:10:08 14:04:10  INFO : Job execution threads will use class loader of thread: Thread-0
+17:10:08 14:04:10  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 14:04:10  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 14:04:10  INFO : RAMJobStore initialized.
+17:10:08 14:04:10  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 14:04:10  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 14:04:10  INFO : Quartz scheduler version: 2.3.0
+17:10:08 14:04:10  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 14:04:10 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:04:36 DEBUG : batch acquisition of 1 triggers
+17:10:08 14:05:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 14:05:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:05:00 DEBUG : Calling execute on job group1.job1
+17:10:08 14:05:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@61521227
+17:10:08 14:05:01  INFO : 数据库:oracle.jdbc.driver.T4CConnection@715c0bfe
+17:10:08 14:05:01  INFO : ---未发现需要同步的数据!
+17:10:08 14:05:29 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:05:57 DEBUG : batch acquisition of 1 triggers
+17:10:08 14:06:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 14:06:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:06:00 DEBUG : Calling execute on job group1.job1
+17:10:08 14:06:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@52a037e4
+17:10:08 14:06:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@5c67c3c0
+17:10:08 14:06:00  INFO : ---未发现需要同步的数据!
+17:10:08 14:06:29 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:06:53 DEBUG : batch acquisition of 1 triggers
+17:10:08 14:07:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 14:07:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:07:00 DEBUG : Calling execute on job group1.job1
+17:10:08 14:07:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@6a3347a4
+17:10:08 14:07:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@64f4a492
+17:10:08 14:07:00  INFO : ---未发现需要同步的数据!
+17:10:08 14:07:23 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:07:50 DEBUG : batch acquisition of 1 triggers
+17:10:08 14:08:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 14:08:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:08:00 DEBUG : Calling execute on job group1.job1
+17:10:08 14:08:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@a6ea53b
+17:10:08 14:08:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@749be6f0
+17:10:08 14:08:00  INFO : ---未发现需要同步的数据!
+17:10:08 14:08:23 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:08:47 DEBUG : batch acquisition of 1 triggers
+17:10:08 14:09:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 14:09:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:09:00 DEBUG : Calling execute on job group1.job1
+17:10:08 14:09:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@306e915
+17:10:08 14:09:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@dc10705
+17:10:08 14:09:00  INFO : ---未发现需要同步的数据!
+17:10:08 14:09:23 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:09:53 DEBUG : batch acquisition of 1 triggers
+17:10:08 14:10:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 14:10:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:10:00 DEBUG : Calling execute on job group1.job1
+17:10:08 14:10:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@587d0e40
+17:10:08 14:10:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@56bafb3f
+17:10:08 14:10:00  INFO : ---未发现需要同步的数据!
+17:10:08 14:10:25 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:10:50 DEBUG : batch acquisition of 1 triggers
+17:10:08 14:11:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 14:11:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:11:00 DEBUG : Calling execute on job group1.job1
+17:10:08 14:11:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@5452325c
+17:10:08 14:11:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@5a95d6a6
+17:10:08 14:11:00  INFO : ---未发现需要同步的数据!
+17:10:08 14:11:28 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:11:58 DEBUG : batch acquisition of 1 triggers
+17:10:08 14:12:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 14:12:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:12:00 DEBUG : Calling execute on job group1.job1
+17:10:08 14:12:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@1974d167
+17:10:08 14:12:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@568e3602
+17:10:08 14:12:00  INFO : ---未发现需要同步的数据!
+17:10:08 14:12:29 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:12:57 DEBUG : batch acquisition of 1 triggers
+17:10:08 14:13:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 14:13:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:13:00 DEBUG : Calling execute on job group1.job1
+17:10:08 14:13:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@40d9f9bd
+17:10:08 14:13:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@4e1e0fd6
+17:10:08 14:13:00  INFO : ---未发现需要同步的数据!
+17:10:08 14:13:28 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:13:55 DEBUG : batch acquisition of 1 triggers
+17:10:08 14:14:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 14:14:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:14:00 DEBUG : Calling execute on job group1.job1
+17:10:08 14:14:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@11a53ccc
+17:10:08 14:14:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@1f62c088
+17:10:08 14:14:00  INFO : ---未发现需要同步的数据!
+17:10:08 14:14:26 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:14:53 DEBUG : batch acquisition of 1 triggers
+17:10:08 14:15:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 14:15:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:15:00 DEBUG : Calling execute on job group1.job1
+17:10:08 14:15:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@65366ba8
+17:10:08 14:15:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@74a49f0b
+17:10:08 14:15:00  INFO : ---未发现需要同步的数据!
+17:10:08 14:15:24 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:15:49 DEBUG : batch acquisition of 1 triggers
+17:10:08 14:16:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 14:16:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 14:16:00 DEBUG : Calling execute on job group1.job1
+17:10:08 14:16:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@58585c94
+17:10:08 14:16:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@1d5ac9fb
+17:10:08 14:16:00  INFO : ---未发现需要同步的数据!
+17:10:08 16:14:26  INFO : ※程序启动中-----启动日期:※2017-10-08 16:14:303※
+17:10:08 16:14:26  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 16:14:26  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 16:14:26  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 16:14:26  INFO : Using default implementation for ThreadExecutor
+17:10:08 16:14:26  INFO : Job execution threads will use class loader of thread: Thread-0
+17:10:08 16:14:27  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 16:14:27  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 16:14:27  INFO : RAMJobStore initialized.
+17:10:08 16:14:27  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 16:14:27  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 16:14:27  INFO : Quartz scheduler version: 2.3.0
+17:10:08 16:14:27  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 16:14:27 DEBUG : batch acquisition of 0 triggers
+17:10:08 16:53:48  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 16:53:49  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 16:53:49  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 16:53:49  INFO : 数据库:oracle.jdbc.driver.T4CConnection@74294adb
+17:10:08 16:53:49  INFO : ---未发现需要同步的数据!
+17:10:08 16:54:09  INFO : ※程序启动中-----启动日期:※2017-10-08 16:54:566※
+17:10:08 16:54:09  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 16:54:10  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 16:54:10  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 16:54:10  INFO : Using default implementation for ThreadExecutor
+17:10:08 16:54:10  INFO : Job execution threads will use class loader of thread: Thread-0
+17:10:08 16:54:10  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 16:54:10  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 16:54:10  INFO : RAMJobStore initialized.
+17:10:08 16:54:10  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 16:54:10  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 16:54:10  INFO : Quartz scheduler version: 2.3.0
+17:10:08 16:54:10  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 16:54:10 DEBUG : batch acquisition of 0 triggers
+17:10:08 16:54:37 DEBUG : batch acquisition of 1 triggers
+17:10:08 16:55:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 16:55:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 16:55:00 DEBUG : Calling execute on job group1.job1
+17:10:08 16:55:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@4cf6af3b
+17:10:08 16:55:00 ERROR : ORA-00908: 缺失 NULL 关键字
+
+17:10:08 16:55:00 ERROR : Job group1.job1 threw an unhandled Exception: 
+java.lang.NullPointerException
+	at com.ztgeo.sendMessage.SendMessage.getListBySet(SendMessage.java:288)
+	at com.ztgeo.sendMessage.SendMessage.getSendData(SendMessage.java:278)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:51)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+17:10:08 16:55:00 ERROR : Job (group1.job1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException
+	at com.ztgeo.sendMessage.SendMessage.getListBySet(SendMessage.java:288)
+	at com.ztgeo.sendMessage.SendMessage.getSendData(SendMessage.java:278)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:51)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+17:10:08 16:56:37  INFO : ※程序启动中-----启动日期:※2017-10-08 16:56:935※
+17:10:08 16:56:38  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 16:56:38  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 16:56:38  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 16:56:38  INFO : Using default implementation for ThreadExecutor
+17:10:08 16:56:38  INFO : Job execution threads will use class loader of thread: Thread-0
+17:10:08 16:56:38  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 16:56:38  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 16:56:38  INFO : RAMJobStore initialized.
+17:10:08 16:56:38  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 16:56:38  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 16:56:38  INFO : Quartz scheduler version: 2.3.0
+17:10:08 16:56:38  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 16:56:38 DEBUG : batch acquisition of 1 triggers
+17:10:08 16:57:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 16:57:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 16:57:00 DEBUG : Calling execute on job group1.job1
+17:10:08 16:57:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@5132b142
+17:10:08 16:57:01  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@7e8af903
+17:10:08 16:57:01 ERROR : Job group1.job1 threw an unhandled Exception: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.substring(String.java:1967)
+	at com.ztgeo.utils.FormateData.substr(FormateData.java:72)
+	at com.ztgeo.sendMessage.SendMessage.sendMessage(SendMessage.java:204)
+	at com.ztgeo.sendMessage.SendMessage.sendMsg(SendMessage.java:35)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:53)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+17:10:08 16:57:01 ERROR : Job (group1.job1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.StringIndexOutOfBoundsException: String index out of range: -2]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.substring(String.java:1967)
+	at com.ztgeo.utils.FormateData.substr(FormateData.java:72)
+	at com.ztgeo.sendMessage.SendMessage.sendMessage(SendMessage.java:204)
+	at com.ztgeo.sendMessage.SendMessage.sendMsg(SendMessage.java:35)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:53)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+17:10:08 16:57:27 DEBUG : batch acquisition of 0 triggers
+17:10:08 16:57:55 DEBUG : batch acquisition of 1 triggers
+17:10:08 16:58:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 16:58:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 16:58:00 DEBUG : Calling execute on job group1.job1
+17:10:08 16:58:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@119950aa
+17:10:08 16:58:00  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@524a1b4
+17:10:08 16:58:00 ERROR : Job group1.job1 threw an unhandled Exception: 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.substring(String.java:1967)
+	at com.ztgeo.utils.FormateData.substr(FormateData.java:72)
+	at com.ztgeo.sendMessage.SendMessage.sendMessage(SendMessage.java:204)
+	at com.ztgeo.sendMessage.SendMessage.sendMsg(SendMessage.java:35)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:53)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+17:10:08 16:58:00 ERROR : Job (group1.job1 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.StringIndexOutOfBoundsException: String index out of range: -2]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.substring(String.java:1967)
+	at com.ztgeo.utils.FormateData.substr(FormateData.java:72)
+	at com.ztgeo.sendMessage.SendMessage.sendMessage(SendMessage.java:204)
+	at com.ztgeo.sendMessage.SendMessage.sendMsg(SendMessage.java:35)
+	at com.ztgeo.utils.Quartz.execute(Quartz.java:53)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+17:10:08 17:00:33  INFO : ※程序启动中-----启动日期:※2017-10-08 17:00:869※
+17:10:08 17:00:34  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 17:00:34  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 17:00:34  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+dybdcyjk
+dybdcyjk
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 17:00:34  INFO : Using default implementation for ThreadExecutor
+17:10:08 17:00:34  INFO : Job execution threads will use class loader of thread: Thread-0
+17:10:08 17:00:34  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 17:00:34  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 17:00:34  INFO : RAMJobStore initialized.
+17:10:08 17:00:34  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 17:00:34  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 17:00:34  INFO : Quartz scheduler version: 2.3.0
+17:10:08 17:00:34  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 17:00:34 DEBUG : batch acquisition of 1 triggers
+17:10:08 17:01:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 17:01:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 17:01:00 DEBUG : Calling execute on job group1.job1
+17:10:08 17:01:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@215cfe87
+17:10:08 17:01:01  INFO : MySql数据库:com.mysql.jdbc.JDBC4Connection@13419a5c
+17:10:08 17:01:01  INFO : ID为:123456789的短信推送成功
+17:10:08 17:01:01  INFO : 数据库:oracle.jdbc.driver.T4CConnection@3526c9de
+17:10:08 17:01:01  INFO : ID为:123456789的短信信息请求状态已更新
+17:10:08 17:01:01  INFO : 数据库:oracle.jdbc.driver.T4CConnection@494f6773
+17:10:08 17:01:01  INFO : ---未发现需要同步的数据!
+17:10:08 17:01:24 DEBUG : batch acquisition of 0 triggers
+17:10:08 17:01:52 DEBUG : batch acquisition of 1 triggers
+17:10:08 17:02:00 DEBUG : Producing instance of Job 'group1.job1', class=com.ztgeo.utils.Quartz
+17:10:08 17:02:00 DEBUG : batch acquisition of 0 triggers
+17:10:08 17:02:00 DEBUG : Calling execute on job group1.job1
+17:10:08 17:02:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@7c1863dd
+17:10:08 17:02:00  INFO : 数据库:oracle.jdbc.driver.T4CConnection@72df922e
+17:10:08 17:02:00  INFO : ---未发现需要同步的数据!
+17:10:08 17:02:23 DEBUG : batch acquisition of 0 triggers
+17:10:08 17:11:00  INFO : ※程序启动中-----启动日期:※2017-10-08 17:11:659※
+17:10:08 17:11:00  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 17:11:01  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 17:11:01  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+null
+null
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 17:11:01  INFO : Using default implementation for ThreadExecutor
+17:10:08 17:11:01  INFO : Job execution threads will use class loader of thread: Thread-0
+17:10:08 17:11:01  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 17:11:01  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 17:11:01  INFO : RAMJobStore initialized.
+17:10:08 17:11:01  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 17:11:01  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 17:11:01  INFO : Quartz scheduler version: 2.3.0
+17:10:08 17:11:01  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 17:11:01 DEBUG : batch acquisition of 0 triggers
+17:10:08 17:15:26  INFO : ※程序启动中-----启动日期:※2017-10-08 17:15:230※
+17:10:08 17:15:26  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 17:15:26  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 17:15:26  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+null
+null
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 17:15:27  INFO : Using default implementation for ThreadExecutor
+17:10:08 17:15:27  INFO : Job execution threads will use class loader of thread: main
+17:10:08 17:15:27  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 17:15:27  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 17:15:27  INFO : RAMJobStore initialized.
+17:10:08 17:15:27  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 17:15:27  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 17:15:27  INFO : Quartz scheduler version: 2.3.0
+17:10:08 17:15:27  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 17:15:27 DEBUG : batch acquisition of 0 triggers
+17:10:08 18:05:35  INFO : ※程序启动中-----启动日期:※2017-10-08 18:05:742※
+17:10:08 18:05:35  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 18:05:36  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 18:05:36  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+null
+null
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 18:05:36  INFO : Using default implementation for ThreadExecutor
+17:10:08 18:05:36  INFO : Job execution threads will use class loader of thread: main
+17:10:08 18:05:36  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 18:05:36  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 18:05:36  INFO : RAMJobStore initialized.
+17:10:08 18:05:36  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 18:05:36  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 18:05:36  INFO : Quartz scheduler version: 2.3.0
+17:10:08 18:05:36  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 18:05:36 DEBUG : batch acquisition of 1 triggers
+17:10:08 18:22:18  INFO : ※程序启动中-----启动日期:※2017-10-08 18:22:273※
+17:10:08 18:22:18  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 18:22:19  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 18:22:19  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+null
+null
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 18:22:19  INFO : Using default implementation for ThreadExecutor
+17:10:08 18:22:19  INFO : Job execution threads will use class loader of thread: main
+17:10:08 18:22:19  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 18:22:19  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 18:22:19  INFO : RAMJobStore initialized.
+17:10:08 18:22:19  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 18:22:19  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 18:22:19  INFO : Quartz scheduler version: 2.3.0
+17:10:08 18:22:19  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 18:22:19 DEBUG : batch acquisition of 0 triggers
+17:10:08 18:32:17  INFO : ※程序启动中-----启动日期:※2017-10-08 18:32:233※
+17:10:08 18:32:17  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 18:32:18  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 18:32:18  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+null
+null
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 18:32:18  INFO : Using default implementation for ThreadExecutor
+17:10:08 18:32:18  INFO : Job execution threads will use class loader of thread: main
+17:10:08 18:32:18  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 18:32:18  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 18:32:18  INFO : RAMJobStore initialized.
+17:10:08 18:32:18  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 18:32:18  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 18:32:18  INFO : Quartz scheduler version: 2.3.0
+17:10:08 18:32:18  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 18:32:18 DEBUG : batch acquisition of 0 triggers
+17:10:08 18:37:46  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 18:37:47  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 18:37:47  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+null
+null
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 18:37:47 ERROR : ----数据库连接异常
+java.sql.SQLException: 调用中无效的参数
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:208)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:236)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.ztgeo.dao.Dao.getConnO(Dao.java:26)
+	at com.ztgeo.sendMessage.SendMessage.synData(SendMessage.java:46)
+	at com.ztgeo.sendMessage.SendMessage.test(SendMessage.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+17:10:08 18:38:14  INFO : ※程序启动中-----启动日期:※2017-10-08 18:38:474※
+17:10:08 18:38:14  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 18:38:15  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 18:38:15  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+null
+null
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 18:38:15  INFO : Using default implementation for ThreadExecutor
+17:10:08 18:38:15  INFO : Job execution threads will use class loader of thread: main
+17:10:08 18:38:15  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 18:38:15  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 18:38:15  INFO : RAMJobStore initialized.
+17:10:08 18:38:15  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 18:38:15  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 18:38:15  INFO : Quartz scheduler version: 2.3.0
+17:10:08 18:38:15  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 18:38:15 DEBUG : batch acquisition of 0 triggers
+17:10:08 18:44:16  INFO : ※程序启动中-----启动日期:※2017-10-08 18:44:33※
+17:10:08 18:44:16  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 18:44:16  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 18:44:16  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+null
+null
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 18:44:16  INFO : Using default implementation for ThreadExecutor
+17:10:08 18:44:16  INFO : Job execution threads will use class loader of thread: main
+17:10:08 18:44:16  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 18:44:16  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 18:44:16  INFO : RAMJobStore initialized.
+17:10:08 18:44:16  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 18:44:16  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 18:44:16  INFO : Quartz scheduler version: 2.3.0
+17:10:08 18:44:16  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 18:44:16 DEBUG : batch acquisition of 0 triggers
+17:10:08 18:49:41  INFO : ※程序启动中-----启动日期:※2017-10-08 18:49:750※
+17:10:08 18:49:41  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 18:49:42  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 18:49:42  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+null
+null
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 18:49:42  INFO : Using default implementation for ThreadExecutor
+17:10:08 18:49:42  INFO : Job execution threads will use class loader of thread: main
+17:10:08 18:49:42  INFO : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:08 18:49:42  INFO : Quartz Scheduler v.2.3.0 created.
+17:10:08 18:49:42  INFO : RAMJobStore initialized.
+17:10:08 18:49:42  INFO : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+17:10:08 18:49:42  INFO : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+17:10:08 18:49:42  INFO : Quartz scheduler version: 2.3.0
+17:10:08 18:49:42  INFO : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+17:10:08 18:49:42 DEBUG : batch acquisition of 1 triggers
+17:10:08 18:56:09  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 18:56:10  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 18:56:10  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+null
+null
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 18:56:10 ERROR : ----数据库连接异常
+java.sql.SQLException: 调用中无效的参数
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:208)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:236)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.ztgeo.dao.Dao.getConnO(Dao.java:26)
+	at com.ztgeo.sendMessage.SendMessage.synData(SendMessage.java:46)
+	at com.ztgeo.sendMessage.SendMessage.test(SendMessage.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+17:10:08 18:56:17  INFO : ※程序启动中-----启动日期:※2017-10-08 18:56:853※
+17:10:08 18:56:18  INFO : 获得的username:8e5b0159e511798bafb5984045037aec
+17:10:08 18:56:18  INFO : 获得的password:8e5b0159e511798bafb5984045037aec
+17:10:08 18:56:18  INFO : xml获取得到的参数:
+jdbc:oracle:thin:@localhost:1521:orcl
+null
+null
+jdbc:mysql://localhost:3306/dbplugin?user=root&password=mysql&useUnicode=true&characterEncoding=UTF8
+APP598
+weihao@ztgeo.com.cn
+系统管理员
+被通知人
+东营短息通知程序反馈邮件
+0 */1 * * * ?
+17:10:08 18:56:18  INFO : Using default implementation for ThreadExecutor
+17:10:08 18:56:18  INFO : Job execution threads will use class loader of thread: main

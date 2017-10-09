@@ -40,7 +40,7 @@ public class Main extends Thread{
 		JFrame jf;
 		JPanel jpanel;
 		JScrollPane jscrollPane;
-		JButton jb1, jb2, jb3;
+		//JButton jb1, jb2, jb3;
 
 		public Main() {
 			UIManager.put("RootPane.setupButtonVisible", false);
@@ -50,7 +50,7 @@ public class Main extends Thread{
 				e1.printStackTrace();
 			}
 			  
-			jf = new JFrame("东营邮件信息发送程序");
+			jf = new JFrame("泗阳邮件信息发送程序");
 			Container contentPane = jf.getContentPane();
 			contentPane.setLayout(new BorderLayout());
 			StringStr.jta=new JTextArea(10,15);
@@ -62,27 +62,28 @@ public class Main extends Thread{
 			jscrollPane = new JScrollPane(StringStr.jta);
 			jpanel = new JPanel();
 			jpanel.setLayout(new GridLayout(1, 3));
-			jb1 = new JButton("开始");
-			jb2 = new JButton("结束并退出");
-			jb1.addActionListener(new ActionListener() {
+			/*jb1 = new JButton("开始");
+			jb2 = new JButton("结束并退出");*/
+			/*jb1.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					jb1.setEnabled(false);
 					start();
 					
 				}
-			});
+			});*/
 
-			jb2.addActionListener(new ActionListener() {
+			/*jb2.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {
+					System.out.println("该程序不允许被关闭!");
 					System.exit(0);
 					
 				}
 			});
 			
 			jpanel.add(jb1);
-			jpanel.add(jb2);
+			jpanel.add(jb2);*/
 			contentPane.add(jscrollPane, BorderLayout.CENTER);
 			contentPane.add(jpanel, BorderLayout.SOUTH);
 			jf.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
@@ -91,7 +92,8 @@ public class Main extends Thread{
 			jf.setVisible(true);
 			jf.addWindowListener(new WindowAdapter() {
 				public void windowClosing(WindowEvent e) {
-					System.exit(0);
+					/*System.exit(0);*/
+					System.out.println("该程序不允许被关闭!");
 				}
 			});
 		//
@@ -111,47 +113,13 @@ public class Main extends Thread{
 			    
 			  //主方法
 				Quartz.startQuartz();
-				//清空错误的字符串 方便后期记录
-				//判断是否有错误信息 如果有 发送邮件
-				if(Main.sbError.length()>0){
-					try {
-						Email.setEmail(Main.sbError.toString());
-						System.out.println("邮件发发送成功!!");
-					} catch (Exception e) {
-						System.out.println("邮件发送失败!!");
-						e.printStackTrace();
-					}
-				}
 				
 				}
 		public static void main(String[] args) {
 			new SystemPrintln();
 			Main m = new Main();
+			m.run();
 		}		
 		
-	/*	public static void main(String[] args) {
-			//输出重定向到日志文件
-			//new SystemPrintln();		
-			File directory = new File("xml");//设定为当前文件夹 
-			String path="";
-			path = directory.getAbsolutePath();//获取标准的路径 
-		    //开发环境 该目录可用
-		    ReadXml.readXmlProperty(path);
-			//主方法
-			String dateS = FormateData.getNowTime();
-			System.out.println("※程序启动中-----启动日期:※"+dateS+"※");
-			Quartz.startQuartz();
-			//清空错误的字符串 方便后期记录
-			//判断是否有错误信息 如果有 发送邮件
-			if(Main.sbError.length()>0){
-				try {
-					Email.setEmail(Main.sbError.toString());
-					System.out.println("邮件发发送成功!!");
-				} catch (Exception e) {
-					System.out.println("邮件发送失败!!");
-					e.printStackTrace();
-				}
-			}
-		}*/
 	
 }

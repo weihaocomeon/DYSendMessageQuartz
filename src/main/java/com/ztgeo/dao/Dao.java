@@ -19,23 +19,41 @@ public class Dao {
 	
 
 
-	public static Connection getConnS(String url,String username, String password){
+	public static Connection getConnO(String url,String username, String password){
 		//获得驱动
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			conn = DriverManager.getConnection(url, username, password);
 			log.info("数据库:"+conn);
 		} catch (ClassNotFoundException e) {
-			log.error("----未发现数据库的驱动类---");
-			log.error(e.getLocalizedMessage());
+			log.error("----未发现数据库的驱动类---",e);
 			Main.sbError.append("----未发现数据库驱动类");
 			System.out.println("----未发现数据库驱动类");
 			System.out.println(e.getLocalizedMessage());
 		} catch (SQLException e) {
-			log.error("----数据库连接异常");
-			log.error(e.getLocalizedMessage());
+			log.error("----数据库连接异常",e);
 			Main.sbError.append("----数据库连接异常");
 			System.out.println("----数据库连接异常") ;
+			System.out.println(e.getLocalizedMessage());
+		}
+		return conn;
+	}
+	
+	public static Connection getConnM(String url){
+		//获得驱动
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection(url);
+			log.info("MySql数据库:"+conn);
+		} catch (ClassNotFoundException e) {
+			log.error("----MySql未发现数据库的驱动类---",e);
+			Main.sbError.append("----MySql未发现数据库驱动类");
+			System.out.println("----MySql未发现数据库驱动类");
+			System.out.println(e.getLocalizedMessage());
+		} catch (SQLException e) {
+			log.error("----MySql数据库连接异常", e);
+			Main.sbError.append("----MySql数据库连接异常");
+			System.out.println("----MySql数据库连接异常") ;
 			System.out.println(e.getLocalizedMessage());
 		}
 		return conn;

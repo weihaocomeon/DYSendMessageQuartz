@@ -8,6 +8,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+import org.junit.Test;
 
 import com.ztgeo.staticParams.StaticParams;
 
@@ -22,40 +23,61 @@ public class FormateData {
 		return dateS;
 	}
 	
-/*	//加密数组转16进制输出
-	public static String converByteToHashString(byte[] bytes){
-		String result ="";
-		for (int i = 0; i < bytes.length; i++) {
-			int temp = bytes[i] & 0xff;
-			String tempHex = Integer.toHexString(temp);
-			if(tempHex.length()<2){
-				result +="0" +tempHex;
-			}else{
-				result += tempHex;
-			}
+	public static String spitTime(String time){
+		return time.substring(0, time.indexOf("."));
+	}
+	
+	public static String getresult(String resultInt){
+		String result =null;
+		switch (resultInt) {
+		case "0":
+			result = null;
+			break;
+		case "-58":
+			result = "发送";
+			break;
+		case "1":
+			result = "消息结构错误";
+			break;
+		case "2":
+			result = "命令字错误";
+			break;	
+		case "3":
+			result = "消息序号重复";
+			break;	
+		case "4":
+			result = "消息长度错误";
+			break;	
+		case "5":
+			result = "资费代码错误";
+			break;	
+		case "6":
+			result = "超过最大信息长";
+			break;	
+		case "7":
+			result = "业务代码错误";
+			break;	
+		case "8":
+			result = "流量控制错误";
+			break;		
+		default:
+			result = "其他类型错误";
+			break;
 		}
 		return result;
 	}
 	
-	public static String getMd5(String str){
-		//使用md5加密
-		 MessageDigest md5;
-		try {
-			md5 = MessageDigest.getInstance("MD5");
-			  //BASE64Encoder base64en = new BASE64Encoder();
-			 //加密后的字符串
-			 str = converByteToHashString(md5.digest(str.getBytes()));
-		} catch (NoSuchAlgorithmException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	   
-		
-		return str;
-	}*/
+	//字符串的截取 
+	public static String substr(String str){
+		String ywlx = str.substring(str.indexOf("办理")+2,str.indexOf("业务"));
+		String slbh = str.substring(str.indexOf("受")+4,str.indexOf("已经")-1);
+		String strS = "5272724330006"+"|"+ywlx+"|"+slbh;
+		ywlx=null;
+		slbh=null;
+		return strS;
+	}
 	
-	// MD5转换
 
-
+	
 }
 

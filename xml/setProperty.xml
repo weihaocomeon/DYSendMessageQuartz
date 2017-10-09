@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 	<!--数据库相关配置-->
-	<username>dybdcyjk</username>
-	<password>dybdcyjk</password>
+	<username>8e5b0159e511798bafb5984045037aec</username>
+	<password>8e5b0159e511798bafb5984045037aec</password>
 	<url>jdbc:oracle:thin:@localhost:1521:orcl</url>
 
+	<!-- mysql数据库连接 -->  
+	<mysqlUrl>jdbc:mysql://localhost:3306/dbplugin?user=root&amp;password=mysql&amp;useUnicode=true&amp;characterEncoding=UTF8</mysqlUrl>
+
 	<!--短信接口相关配置-->
-	<!-- 客户名称 -->
-	<ecName>东营市国土资源局</ecName>
-	<!-- 用户名-->
-	<apId>ceshi0</apId>
-	<!--密码 -->
-	<secretKey>ceshi0</secretKey>
-	<!--内容  -->
-	<content>这是一条测试短信!!发件人--中天吉奥徐州分公司 研发部</content>
-	<!-- 签名编码 -->
-	<sign>uJHXjyjdt</sign>
-	<!-- webService地址 -->
-	<webSUrl>http://112.35.1.155:1992/sms/norsubmit?</webSUrl>
+	<APPLICATIONID>APP598</APPLICATIONID>
 	
 	<!-- 程序故障紧急联系人邮箱配置 -->
 	<!--收件人邮箱地址...建议使用阿里云企业邮  -->
