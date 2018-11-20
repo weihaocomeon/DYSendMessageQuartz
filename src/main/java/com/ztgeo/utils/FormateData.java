@@ -69,12 +69,24 @@ public class FormateData {
 	
 	//字符串的截取 
 	public static String substr(String str){
-		String ywlx = str.substring(str.indexOf("办理")+2,str.indexOf("业务"));
-		String slbh = str.substring(str.indexOf("受")+4,str.indexOf("已经")-1);
-		String strS = "5272724330006"+"|"+ywlx+"|"+slbh;
-		ywlx=null;
-		slbh=null;
-		return strS;
+	       String ywlx =null;
+	        String slbh = null;
+	        String strS = null;
+	        //判断是否是正在办理中的
+	        if(str.contains("已经正在办理")){//正在办理
+	            ywlx = str.substring(str.indexOf("办理")+2,str.indexOf("业务"));
+	            slbh = str.substring(str.indexOf("受")+4,str.indexOf("已经")-1);
+	            strS = "5272724330009"+"|"+ywlx+"|"+slbh;
+	        }else{
+	            ywlx = str.substring(str.indexOf("办理")+2,str.indexOf("业务"));
+	            slbh = str.substring(str.indexOf("受")+4,str.indexOf("已经")-1);
+	            strS = "5272724330006"+"|"+ywlx+"|"+slbh;
+	        }
+
+	        ywlx=null;
+	        slbh=null;
+	        System.out.println(strS);
+	        return strS;
 	}
 	
 
